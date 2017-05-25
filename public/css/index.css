@@ -1,0 +1,250 @@
+/* commom */
+
+*{ padding: 0;  margin: 0; text-decoration: none; list-style: none;}
+
+/* main-index */
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+header, section, footer {  
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+header {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+}
+.title-w h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.title-w h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.title-w h3 strong {
+  font-size: 2.0rem;
+}
+main section {
+  width: 100%;
+  height: 55vh;
+  background: url('main.jpg') no-repeat;
+  background-size: cover;
+  /*transition-duration: 3s;
+  transition-delay: 1s;*/
+}
+/*main section:hover {
+  background-position: 0px -90px;
+}*/
+main section .search-w {
+  width: 600px;
+}
+main section .search-w .search-c {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: solid 2px #515457;
+  box-sizing: border-box;
+}
+.search-c table {
+  width: 100%;
+}
+.search-c tr {
+  width: 100%;
+}
+.search-c tr td {
+  vertical-align: center;
+}
+.searchBar-ci {
+  width: 90%;
+}
+.searchClick-ci {
+  width: 10%;
+}
+.search-c .searchBar-ci input {
+  width: 95%;
+  height: 50px;
+  border: 0;
+  margin-left: 4px;
+}
+.search-c .searchClick-ci input {
+  width: 90%;
+  height: 50px;
+  margin: 4px 4px 0 0 !important;
+  border: 0;
+  background: url('sprites.svg');
+  background-color: #008DDF;
+  background-position: 15px -85px;
+  background-repeat: no-repeat;
+}
+footer {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+}
+footer .menu-w {
+  width: 500px;
+  font-family: "Helvetica Neue" ,Helvetica ,Arial,sans-serif;
+  height: 60%;
+}
+.menu-w h3 {
+  color: #515457;
+}
+.menu-w .menu-c {
+  display: flex;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.menu-c div {
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+}
+.menu-c div:nth-child(2) {
+  margin: 0 30px;
+}
+.menu-c div a {
+  color: #4c4c4c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu-c div a:hover {
+  opacity: 0.7;
+  transition: opacity .5s;
+}
+.contact {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color:	#FAFAFA;
+  border-top: solid 1px #EEEEEE; 
+}
+.contact ul {
+  display: flex;
+  width: 800px;
+  justify-content: space-around;
+}
+.contact ul li {
+  font-size: .9rem;
+  color: #777777;
+}
+.contact ul li a {
+  color: #777777;
+}
+.contact ul li a:active {
+  color: #000000;
+}
+
+
+/* link-section commom*/
+
+.link-w {
+  position: relative;
+  width: 100%;   
+  height: 300vh;
+}
+.link-w .link-photo-c ,
+.link-music-c ,
+.link-video-c  {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.link-w .b {
+  width: 100%;
+}
+.link-w .t-b {
+  position: relative;
+  height: 30vh;
+}
+.link-w .t-b .title-p {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  font-size: 5rem;
+  color: #FFFFFF;
+}
+.link-w .c-b {
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+}
+.link-w .c-b .content-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  height: 100%;
+}
+
+.content-p .content-p-w1,
+.content-p-w2 {
+  display: flex;
+  justify-content: space-around;
+}
+.content-p .content-pi {
+  float: left;
+  width: 300px;
+  height: 40%;
+  margin: 5% 0;
+}
+.content-pi ul li img {
+  width: 100%;
+  height: 150px;
+  border: solid 0.5px #777777;
+}
+.content-pi ul li:nth-of-type(2) {
+  font-size: 1.5rem;
+  color: #222222;
+  font-weight: bold;
+}
+.content-pi ul li:nth-of-type(3) a {
+  color: #0066CC;
+  font-size: 1.2rem;
+}
+.link-w .f-b {
+  height: 5vh;
+}
+
+/* link-photo */
+.link-photo-c .photo-title-b {
+  background: url('photo-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -180px;
+}
+/* link-music */
+.link-music-c .music-title-b {
+  background: url('music-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -180px;
+}
+.music-content-b .pi-1 ul li:nth-of-type(2) b,
+.video-content-b .pi-6 ul li:nth-of-type(2) b {
+  font-size: 0.8rem;
+}
+
+/* link-video */
+.link-video-c .video-title-b {
+  background: url('video-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -180px;
+}
+.video-content-b .pi-6 ul li:nth-of-type(3) a {
+  font-size: 1rem;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "instub",
+  "version": "1.1.0",
+  "dependencies": {
+    "ejs": "*",
+    "express": "*"
+  },
+  "description": "Adams factore",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdy-adams/"
+  },
+  "keywords": [
+    "adams"
+  ],
+  "author": "Dev Fuck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nerdrun/iNSTUB/issues"
+  },
+  "homepage": "https://github.com/nerdrun/iNSTUB#readme"
+}
